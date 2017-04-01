@@ -1,6 +1,6 @@
 {
   "name": "micro-hoofs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Higher-order functions for your zeit/micro",
   "main": "index.js",
   "repository": {
