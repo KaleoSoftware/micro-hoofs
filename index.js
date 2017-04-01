@@ -1,6 +1,11 @@
 const { json } = require('micro')
 
-const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)))
+const compose = (...fns) => fns.reduce((f, g) => (...args) =>
+  // Allow falsey functions to be passed in, by passing over them
+  g ? f(g(...args)) : f(...args),
+  // Set initial value with blank HOF, so "f" above is always truthy on first iteration
+  fn => async (req, res) => fn(req, res)
+)
 
 const respondToLivenessProbe = fn => async (req, res) => {
   if (req.method == 'GET' && req.url == '/') return { healthy: true }
