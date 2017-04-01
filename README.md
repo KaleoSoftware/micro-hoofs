@@ -19,5 +19,5 @@ module.exports = compose(
 )(async req => cmd(req.json))
 ```
 
-`curl localhost:3000` -> returns `{"healthy": true}`
-`curl -XPOST -d'{"world": "world!"}' http://localhost:3000` -> returns `{"hello": "world!"}`
+ - `curl localhost:3000` -> returns `{"healthy": true}`
+ - `curl -XPOST -d'{"world": "world!"}' http://localhost:3000` -> returns `{"hello": "world!"}`
