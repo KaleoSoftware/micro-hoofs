@@ -1,0 +1,17 @@
+{
+  "name": "micro-hoofs",
+  "version": "0.0.1",
+  "description": "Higher-order functions for your zeit/micro",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KaleoSoftware/micro-hoofs.git"
+  },
+  "homepage": "https://github.com/KaleoSoftware/micro-hoofs.git",
+  "keywords": [
+    "micro",
+    "middleware"
+  ],
+  "author": "Kaleo Software",
+  "license": "MIT"
+}
