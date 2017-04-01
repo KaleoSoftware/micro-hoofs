@@ -8,7 +8,6 @@ const respondToLivenessProbe = fn => async (req, res) => {
 }
 
 const parseJSONInput = fn => async (req, res) => {
-  const output = await text(req)
   if (req.headers['content-type'] === 'application/json') req.json = await json(req)
   return fn(req, res)
 }
