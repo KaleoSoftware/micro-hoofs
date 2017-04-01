@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/KaleoSoftware/micro-hoofs.git"
   },
+  "scripts": {
+    "push": "npm version patch && git push && npm publish"
+  },
   "homepage": "https://github.com/KaleoSoftware/micro-hoofs.git",
   "keywords": [
     "micro",
@@ -15,6 +18,6 @@
   "author": "Kaleo Software",
   "license": "MIT",
   "peerDependencies": {
-    "micro": ">= 6"
+    "micro": ">= 7"
   }
 }
