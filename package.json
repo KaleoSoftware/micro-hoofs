@@ -13,5 +13,8 @@
     "middleware"
   ],
   "author": "Kaleo Software",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "micro": ">= 6"
+  }
 }

@@ -1,3 +1,5 @@
+const { json } = require('micro')
+
 const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)))
 
 const respondToLivenessProbe = fn => async (req, res) => {
